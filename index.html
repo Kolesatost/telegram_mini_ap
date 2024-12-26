@@ -20,6 +20,81 @@
     </script>
     <title></title>
     <style>
+
+.page { padding: 0 15px 30px; }
+
+.page.bannerTest h1 + div { border: 1px solid #ffbc07; padding: 14px; }
+
+.page.placementTest .container {
+  padding: 0 15px;
+}
+
+.page.placementTest .js {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page.placementTest .bn {
+  border: 1px solid #ffbc07;
+  padding: 14px;
+}
+
+.page.placementTest .cookies {
+  margin-top: 30px;
+}
+
+.page.placementTest .direct-link,
+.page.placementTest .cookies__button, .native__button, .pops__button, .sb__button, .banner__button {
+  border-bottom: 1px dotted;
+  color: #666;
+  cursor: pointer;
+  font-weight: 400;
+  padding-bottom: 1px;
+}
+
+.page.placementTest .direct-link {
+  margin-left: 4px;
+  text-transform: lowercase;
+}
+
+.page.placementTest .cookies__header {
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.page.placementTest .cookies__content {
+  margin-bottom: 4px;
+}
+
+.page.placementTest .cookies__content dt,
+.page.placementTest .cookies__content dd {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.page.placementTest .cookies__content dt {
+  margin-right: 2px;
+}
+
+.page.placementTest .cookies__content dd {
+  background: #f8f8f8;
+  border-radius: 2px;
+  font-family: monospace;
+  margin-left: 2px;
+  padding: 4px 6px;
+}
+
+.page.placementTest .cookies__button, .native__button, .pops__button, .sb__button, .banner__button {
+  color: #999;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.page.placementTest .cookies__button:hover, .native__button:hover, .pops__button:hover, .sb__button:hover, .banner__button:hover {
+  color: #666;
+}
+
         body {
             --bg-color: var(--tg-theme-bg-color, #fff);
             font-family: sans-serif;
@@ -1830,8 +1905,169 @@
     } catch(e) {}
 </script>
 
-<script async="async" data-cfasync="false" src="//pl25195988.profitablecpmrate.com/1a441162741f1b61abc768e107dd818c/invoke.js"></script>
-<div id="container-1a441162741f1b61abc768e107dd818c"></div>
+<p class="container js">
+    Direct link: <a class="direct-link" href="https://www.profitablecpmrate.com/pbhgh4c7b3?key=f2999454d85e5de8324da418fc819cad" target="_blank">https://www.profitablecpmrate.com/pbhgh4c7b3?key=f2999454d85e5de8324da418fc819cad</a>
+  </p>
+
+<div class="page placementTest">
+    <div class="container cookies">
+        <strong class="cookies__header">Cookies</strong>
+        <dl class="cookies__content" id="cookies"></dl>
+        <span class="cookies__button" id="refresh">Refresh cookies</span><br />
+        <span class="cookies__button" id="clear">Clear all cookies & refresh the page</span><br />
+        <span class="native__button" id="inject_native">Добавить нативку placementID = 25095489</span><br />
+        <span class="pops__button" id="inject_pops">Добавить попс placementID = 20464625</span><br />
+        <span class="sb__button" id="inject_sb">Добавить sb placementID = 20106254</span><br />
+        <span class="banner__button" id="inject_banner">Добавить баннер placementID = 20106254</span><br />
+    </div>
+
+
+</div>
+
+    <div id="native"></div>
+    <div id="pops"></div>
+    <div id="sb"></div>
+    <div id="banner">
+        <script type="text/javascript">
+            atOptions = {
+                'key' : '5e343b1a311f0f58b3f24031b8641d37',
+                'format' : 'iframe',
+                'height' : 250,
+                'width' : 300,
+                'params' : {}
+            };
+        </script>
+    </div>
+
+  <script>
+    (() => {
+        const container_native = document.getElementById('native');
+        const button_native = document.getElementById('inject_native');
+        let lock_nv = false;
+
+        button_native.addEventListener('click', () => {
+            if (lock_nv) {
+                alert("Нативка уже добавлена")
+                return
+            }
+            lock_nv = true;
+            const $script = document.createElement('script');
+            $script.type = 'text/javascript';
+            $script.async = true;
+            $script.src = '//pl25195988.profitablecpmrate.com/1a441162741f1b61abc768e107dd818c/invoke.js';
+            container_native.appendChild($script);
+
+            const $div= document.createElement('div');
+            $div.id = "container-1a441162741f1b61abc768e107dd818c";
+            container_native.appendChild($div);
+        });
+
+        const container_pops = document.getElementById('pops');
+        const button_pops = document.getElementById('inject_pops');
+        let lock_pops = false;
+
+        button_pops.addEventListener('click', () => {
+            if (lock_pops) {
+                alert('pops уже добавлен')
+                return;
+            }
+            lock_pops = true;
+            const $script = document.createElement('script');
+            $script.type = 'text/javascript';
+            $script.async = true;
+            $script.src = '//pl20565124.profitablecpmrate.com/09/29/f0/0929f06cbccebc8e6fcedee1f51ef781.js';
+            container_pops.appendChild($script);
+        });
+
+        const container_sb = document.getElementById('sb');
+        const button_sb = document.getElementById('inject_sb');
+        let lock_sb = false;
+
+        button_sb.addEventListener('click', () => {
+            if (lock_sb) {
+                alert('sb уже добавлен')
+                return;
+            }
+            lock_sb = true;
+            const $script = document.createElement('script');
+            $script.type = 'text/javascript';
+            $script.async = true;
+            $script.src = '//pl20206753.profitablecpmrate.com/44/f9/d5/44f9d5b934f4f5be48caf5d1f960e73a.js';
+            container_sb.appendChild($script);
+        });
+
+        const container_banner = document.getElementById('banner');
+        const button_banner = document.getElementById('inject_banner');
+        let lock_banner = false;
+
+        button_banner.addEventListener('click', () => {
+            if (lock_banner) {
+                alert('banner уже добавлен')
+                return;
+            }
+
+            lock_banner = true;
+
+            const $script = document.createElement('script');
+            $script.type = 'text/javascript';
+            $script.async = true;
+            $script.src = "//www.highperformanceformat.com/5e343b1a311f0f58b3f24031b8641d37/invoke.js";
+            container_banner.appendChild($script);
+        });
+    }) ()
+
+
+  </script>
+
+  <script>
+    (() => {
+      const cookiesContainer = document.getElementById('cookies');
+
+      const clearButton = document.getElementById('clear');
+      const refreshButton = document.getElementById('refresh');
+
+      const getCookies = () => (
+        document
+          .cookie
+          .split(';')
+          .filter(Boolean)
+          .map(cookie => cookie.trim().split('='))
+          .sort((a, b) => a[0].localeCompare(b[0]))
+      );
+
+      const clearCookies = () => {
+        const cookies = getCookies();
+        const domain = window.location.hostname.split('.').slice(-2).join('.');
+        const expires = new Date(0).toUTCString();
+        for (const [name] of cookies) {
+          document.cookie = `${name}=; expires=${expires}; path=/`;
+          document.cookie = `${name}=; expires=${expires}; domain=${domain}; path=/`;
+        }
+      };
+
+      const refreshCookies = () => {
+        const cookies = getCookies();
+        console.log(cookies)
+        cookiesContainer.innerHTML = (
+          cookies
+            .map(([name, value]) => `<dt>${name}</dt> = <dd>${value}</dd><br />`)
+            .join('')
+        );
+      };
+
+      clearButton.addEventListener('click', () => {
+        clearCookies();
+        window.location.reload();
+      });
+
+      refreshButton.addEventListener('click', () => {
+        refreshCookies();
+      });
+
+      refreshCookies();
+    }) ()
+  </script>
+
 
 </body>
 </html>
